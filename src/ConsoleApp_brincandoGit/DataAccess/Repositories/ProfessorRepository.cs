@@ -7,24 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_brincandoGit.DataAccess.Repositories
 {
-    internal class ProfessorRepository : IProfessorRepository
+    internal class ProfessorRepository : AbstractRepository<Professor>, IProfessorRepository
     {
-        public void Excluir(Professor entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Professor ObterPor(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Professor> ObterTodos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Salvar(Professor entity)
+        public List<Professor> ObterPor(string nome)
         {
             throw new NotImplementedException();
         }

@@ -12,5 +12,7 @@ namespace ConsoleApp_brincandoGit.DomainModel
         public string RE { get; set; }
     }
 
-    public interface IProfessorRepository : IBaseRepository<Professor> { }
+    public interface IProfessorRepository : IBaseRepository<Professor> {
+        List<Professor> ObterPor(string nome);
+    }
 }

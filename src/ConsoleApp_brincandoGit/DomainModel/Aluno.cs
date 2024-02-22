@@ -12,5 +12,9 @@ namespace ConsoleApp_brincandoGit.DomainModel
         public string RA { get; set; }
     }
 
-    public interface IAlunoRepository : IBaseRepository<Aluno> { }
+    public interface IAlunoRepository : IBaseRepository<Aluno> {
+
+        List<Aluno> ObterPor(string nome);
+
+    }
 }

@@ -7,24 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_brincandoGit.DataAccess.Repositories
 {
-    internal class AlunoRepository : IAlunoRepository
+    internal class AlunoRepository : AbstractRepository<Aluno>, IAlunoRepository
     {
-        public void Excluir(Aluno entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Aluno ObterPor(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Aluno> ObterTodos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Salvar(Aluno entity)
+        public List<Aluno> ObterPor(string nome)
         {
             throw new NotImplementedException();
         }
