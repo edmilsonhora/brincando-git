@@ -10,6 +10,7 @@ namespace ConsoleApp_brincandoGit.DomainModel
     {
         public string Nome { get; set; }
         public string RA { get; set; }
+        public string Cpf { get; set; }
     }
 
     public interface IAlunoRepository : IBaseRepository<Aluno> {
